@@ -179,7 +179,7 @@ ContentManager cm = myAgent.getContentManager();
 Action act = (Action) cm.extractContent(cfp);
 Sell sellAction = (Sell) act.getAction();
 NaturalGas book = sellAction.getItem();
-myGui.notifyUser("Received Proposal to buy "+book.getTitle());
+myGui.notifyUser("Received to buy "+book.getTitle());
 PriceManager pm = (PriceManager)catalogue.get(book.getTitle());
 
 if (pm != null) {
